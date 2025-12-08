@@ -1,0 +1,41 @@
+SQL> conn system/password
+Connected.
+
+
+SQL>  create user scott identified by tiger;
+User created.
+
+
+SQL> grant connect, dba, resource to scott;
+Grant succeeded.
+
+
+SQL> conn scott/tiger;
+Connected.
+
+
+CREATE TABLE DEPT(
+	DEPTNO NUMBER(2) NOT NULL,
+	DNAME VARCHAR2(14),
+	LOC   VARCHAR2(13),
+	CONSTRAINT PK_DEPT PRIMARY KEY(DEPTNO)
+);
+
+Table created.
+
+
+
+CREATE TABLE EMP(
+	EMPNO NUMBER(4),
+	ENAME VARCHAR2(10),
+	JOB   VARCHAR2(9),
+	MGR  NUMBER,
+	HIREDATE DATE,
+	SAL NUMBER(7,2),
+	COMM NUMBER(7,2),
+	DEPTNO NUMBER(2),
+	CONSTRAINT PK_EMP PRIMARY KEY(EMPNO),
+	CONSTRAINT FK_DEPT FOREIGN KEY(DEPTNO) REFERENCES DEPT(DEPTNO)
+);
+
+Table created.

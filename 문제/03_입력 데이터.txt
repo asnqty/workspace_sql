@@ -1,0 +1,29 @@
+insert into book values (1, '축구의역사', '굿스포츠', 7000);
+insert into book values (2, '축구아는여자', '나무수', 13000);
+insert into book values (3, '축구의이해', '대한미디어', 22000);
+insert into book values (4, '골프바이블', '대한미디어', 35000);
+insert into book values (5, '피겨교본', '굿스포츠', 6000);
+insert into book values (6, '역도단계별기술', '굿스포츠', 6000);
+insert into book values (7, '야구의추억', '이상미디어', 20000);
+insert into book values (8, '야구를부탁해', '이상미디어', 13000);
+insert into book values (9, '올림픽이야기', '삼성당', 7500);
+insert into book values (10, '올림픽챔피언', '피어슨', 13000);
+
+insert into customer values (1, '박지성', '영국 맨체스터', '010-0000-0000');
+insert into customer values (2, '김연아', '대한민국 서울', '010-1111-1111');
+insert into customer values (3, '장미란', '대한민국 강원도', '010-2222-2222');
+insert into customer values (4, '추신수', '미국 텍사스', '010-4444-4444');
+insert into customer values (5, '박세리', '대한민국 대전', '010-5555-5555');
+
+insert into orders values (1, 1, 1, 6000, '2014-07-01');
+insert into orders values (2, 1, 3, 21000, '2014-07-03');
+insert into orders values (3, 2, 5, 8000, '2014-07-03');
+insert into orders values (4, 3, 6, 6000, '2014-07-04');
+insert into orders values (5, 4, 7, 20000, '2014-07-07');
+insert into orders values (6, 1, 2, 12000, '2014-07-07');
+insert into orders values (7, 4, 8, 13000, '2014-07-07');
+insert into orders values (8, 3, 10, 12000, '2014-07-08');
+insert into orders values (9, 2, 10, 7000, '2014-07-09');
+insert into orders values (10, 3, 8, 13000, '2014-07-10');
+
+commit;

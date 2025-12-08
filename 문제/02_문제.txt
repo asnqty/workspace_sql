@@ -1,0 +1,36 @@
+다음 DB 작업을 수행하시오.
+
+1. 회원 테이블을 생성하시오. [ userTable ]
+* 필드
+1. 회원번호(숫자)		userNo PK 시퀀스
+2. 회원ID(문자-20)		userId 필수 중복 안 됨
+3. 회원비밀번호(문자-20)	userPw 필수
+4. 회원연락처(문자-20)	userTel 중복 안 됨
+5. 회원멤버쉽(문자-10)	userMembership gold / silver / bronze 중 하나
+6. 회원이메일(문자-20)	userEmail 중복 안 됨
+7. 회원포인트(숫자)		userPoint 기본 1000점
+8. 회원가입일(날짜)		joinDate 기본 현재 날짜
+
+2. 적절한 데이터 5개 이상 삽입하시오.
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (1, 'id01', '1111', '010-1111-1111', 'gold', 'id01@aa.com');
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (2, 'id02', '1111', '010-1111-2222', 'silver', 'id02@aa.com');
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (3, 'id03', '1111', '010-1111-3333', 'bronze', 'id03@aa.com');
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (4, 'id04', '1111', '010-1111-4444', 'gold', 'id04@aa.com');
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (5, 'id05', '1111', '010-1111-5555', 'silver', 'id05@aa.com');
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (6, 'id06', '1111', '010-1111-6666', 'bronze', 'id06@aa.com');
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (7, 'id07', '1111', '010-1111-7777', 'gold', 'id07@aa.com');
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (8, 'id08', '1111', '010-1111-8888', 'silver', 'id08@aa.com');
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (9, 'id09', '1111', '010-1111-9999', 'bronze', 'id09@aa.com');
+insert into userTable (userNo, userId, userPw, userTel, userMembership, userEmail) values (10, 'id10', '1111', '010-1111-0000', 'gold', 'id10@aa.com');
+commit;
+
+3. 다음 질의문을 처리하시오.
+1) userNo 이 5 이상인 회원을 검색하시오.
+2) userNo 이 3 ~ 7 사이인 회원을 검색하시오.
+3) userTel 마지막 4자리가 '5555' 인 회원을 검색하시오.
+4) userMembership 이 'gold' 인 회원의 userPoint 평균을 출력하시오. 
+5) userId 가 'id03' 인 회원의 joinDate 를 '2019/10/28/'로 수정하시오.
+6) userMembership 이 'gold' 인 회원들의 userPoint 를 모두 3배 증가시키시오.
+7) userId 가 'id08' 인 회원의 userPw 를 '2222'로 수정하시오.
+8) userMembership 이 'bronze' 인 회원들 중에서 userPoint 가 1000 이상인 회원들의 userMembership 을 'silver'로 수정하시오.
+9) userNo 가 5 인 회원을 삭제하시오.
