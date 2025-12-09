@@ -1,4 +1,4 @@
-SELECT * FROM bbs_t;
+SELECT * FROM bbs_t;    
 SELECT * FROM comment_t;
 -- 테이블 내의 모든 데이터를 복사하여 다시 넣기
 insert into bbs_t(b_idx, writer, title, content, pw, hit, ip, filename, reg_date)
