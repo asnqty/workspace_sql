@@ -11,3 +11,5 @@ SELECT b_idx, writer, title, hit, reg_date FROM
 				WHERE ROWNUM <= pageNum * amount)
 			WHERE rn > (pageNum-1) * amount;
 commit;
+------- member
+SELECT * FROM member_t;
